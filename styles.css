@@ -1,0 +1,95 @@
+:root {
+    --GRAY1: #F2F2F2;
+    --GRAY2: #D9D9D9;
+    --GRAY3: #808080;
+    --GRAY4: #333333;
+    --GRAY5: #262626;
+    --GRAY6: #1A1A1A;
+    --GRAY7: #0D0D0D;
+
+    --GOLD1: #DAA520;
+    --GOLD2: #CD9A0E;
+    --GOLD3: #c18f00;
+}
+
+:focus {
+    outline: 2px solid var(--GOLD1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: var(--GRAY7);
+    color: var(--GRAY1);
+}
+
+body, button, textarea, input, select {
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 1rem;
+}
+
+.field {
+    width: 500px;
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+}
+
+#input {
+    padding: 1rem;
+    width: 100%;
+    background: var(--GRAY6);
+    border-radius: 10px;
+    border: 0;
+    resize: none;
+    height: 10rem;
+    color: var(--GRAY2);
+}
+#input::placeholder {
+    color: var(--GRAY3);
+    opacity: 0.5;
+}
+
+.counter {
+    width: 250px;
+    text-align: center;
+    border: 2px solid var(--GOLD1);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: var(--GOLD1);
+    background: black;
+    box-shadow: 0 0 5px var(--GOLD1);
+    user-select: none;
+}
+
+#toggle {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 2px solid var(--GOLD3);
+    background: transparent;
+    color: var(--GOLD3);
+    font-weight: bold;
+    transition: all 0.3s;
+}
+#toggle:hover {
+    color: var(--GRAY7);
+    background: var(--GOLD3);
+    cursor: pointer;
+    transform: scale(110%);
+    box-shadow: 0 0 5px var(--GOLD1);
+}
